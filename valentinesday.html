@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Love Letter</title>
+    <style>
+        body {
+            font-family: 'Trattatello, fantasy', cursive;
+            background-color:#353935;
+            margin: 0;
+            padding: 0;
+        }
+        #letter {  width: 80%;
+            background-color:#FAA0A0;
+            padding: 2rem;
+            margin: 2rem auto;
+            border: 1px solid #000;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .line {
+            height: 1px;
+            width: 100%;
+            background-color: #000;
+            margin: 1rem auto;
+        }
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: url('heart.png') no-repeat;
+            background-size: cover;
+            top: -50px;
+            left: 30px;
+            animation: flyHeart 5s ease-in-out infinite;
+        }
+        @keyframes flyHeart {
+            0% { left: 30px; top: -50px; }
+            50% { left: 70%; top: 500px; }
+            100% { left: 30px; top: -50px; }
+        }
+    </style>
+</head>
+    <div id="letter">
+        <h1 style="text-align: center;">will you be my valentine?</h1>
+        <div class="line"></div>
+        <p>
+            dear zoya <span id="zoya"></span>,<br><br>
+          
+            in the quiet chambers of my heart, i found love when love seemed a distant dream. through the ebb and flow of your soul's journey, across every celestial season, in every dawn of existence, in realms unexplored and forms yet unknown, my love for you blossoms. it transcends the boundaries of time, embracing all that was, all that is, and all that will ever be. your essence, uniquely you, intertwines with mine, shaping who i am in its tender embrace. each moment with you is a lesson in love, a sacred dance with the universe itself. i hold dear the earth that cradled your spirit, for it gave birth to the light that guides my path. loving you is an undeniable truth, a purity that surpasses all else. as i tread the path ahead, i offer my prayers to the stars, that they may keep us intertwined, side by side, in the tapestry of destiny's design.<br><br>
+
+            i breathe for your love.<br><br>
+
+            will you be my valentine this year >.< ? <br><br>
+
+            yours,<br>
+            ares<br><br>
+            <span id="yourName"></span>
+        </p>
+    </div>
+    <div class="heart"></div>
+    <script>
+        document.getElementById('girlfriendName').innerText = 'Your Girlfriend\'s Name';
+        document.getElementById('yourName').innerText = 'Your Name';
+    </script>
+</body>
+</html>
